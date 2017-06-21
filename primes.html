@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="primes10M.js"></script>
+	<link rel="stylesheet" href="primes.css">
+</head>
+<body>
+	<div id="zoomContainer">
+		<div id="grid"></div>
+	</div>
+	<div id="control">
+		<div>
+			<label for="zoom">Zoom</label>
+			<input type="range" min=".1" max="10" id="zoom" value="2">
+		</div>
+
+		<div>
+			<label for="form_start">Start</label>
+			<input type="text" value="1" id="form_start">
+		</div>
+
+		<div>
+			<label for="form_length">Length</label>
+			<input type="text" value="1019" id="form_length">
+		</div>
+
+		<div>
+			<label for="form_start">End</label>
+			<input type="text" value="1019" id="form_end">
+		</div>
+
+		<div>
+			<label for="form_cols">Columns</label>
+			<input type="text" value="30" id="form_cols">
+		</div>
+
+		<div>
+			<label for="form_markprimes">Mark First <sup>n</sup> Primes</label>
+			<input type="text" value="1" id="form_markprimes">
+		</div>
+
+		<div>
+			<label for="form_shownums">Show numbers</label>
+			<input type="checkbox" checked="true" id="form_shownums">
+		</div>
+	</div>
+	<script src="primes.js"></script>
+</body>
