@@ -5,10 +5,16 @@
 	<link rel="stylesheet" href="primes.css">
 </head>
 <body>
+
 	<div id="zoomContainer">
 		<div id="grid"></div>
 	</div>
+
 	<div id="control">
+		<h3>Prime Explorer</h3>
+
+		<p>Prime Numbers 2 to 9,999991 (~10 million) are loaded. Primes are odd. Even numbers not drawn.</p>
+
 		<div>
 			<label for="zoom">Zoom</label>
 			<input type="range" min=".1" max="10" id="zoom" value="2">
@@ -43,6 +49,10 @@
 			<label for="form_shownums">Show numbers</label>
 			<input type="checkbox" checked="true" id="form_shownums">
 		</div>
+
+		<p><i>Note: I don't consider 2 to be a True Prime number because it can not sieve later primes.</i></p>
+
+		<p><a href="https://github.com/F1LT3R/prime-explorer">Github Link</a></p>
 	</div>
 	<script src="primes.js"></script>
 </body>
